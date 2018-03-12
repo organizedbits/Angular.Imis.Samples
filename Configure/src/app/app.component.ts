@@ -14,8 +14,7 @@ export class AppComponent {
 
   constructor() {
     const jsonSettingsElement = document.querySelector('#JsonSettings') as HTMLInputElement;
-// tslint:disable-next-line:no-debugger
-debugger;
+
     if (jsonSettingsElement && jsonSettingsElement.value && jsonSettingsElement.value.length > 0) {
         this.settings = JSON.parse(jsonSettingsElement.value) as Settings;
         this.colorControl.setValue(this.settings.color);
